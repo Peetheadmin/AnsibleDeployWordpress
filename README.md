@@ -34,7 +34,7 @@ Step 6: Tested the functioning of the CFT and pushed the Repository to GitHub ht
 
 **To Build the stack**:
 
-1. Download  this repository https://github.com/sriramgaddipati/UbuntuAnsible .
+1. Download  this repository https://github.com/sriramgaddipati/Ubun .
 
 2. Create a stack using CloudFormation.json file in cloud formation.
 
