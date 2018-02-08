@@ -23,18 +23,20 @@ Step 4: Built a CloudFormation Template with parameters(Name.Password,.,etc;) an
 
 **Mapping between AWS Resources**
 
-<img width="573" alt="cft resource mapping" src="https://cloud.githubusercontent.com/assets/19828746/24269797/081cd75e-0fe9-11e7-85b1-757bce47ed18.png">
+
+![screen shot 2018-02-07 at 11 58 14 pm](https://user-images.githubusercontent.com/12737517/35960150-99f79486-0c76-11e8-9183-32ef0d807db0.png)
 
 
-Step 5: Installed necessary packages(git, ansible, cfn-heat ...) to download the repo(mentioned in step3), run playbook, wait handle and  referencing parameters in Userdata. 
 
-<img width="1280" alt="parameter2userdata" src="https://cloud.githubusercontent.com/assets/19828746/24136992/1333b1ba-0de8-11e7-8719-117c5e317d21.png">
+Step 5: Installed necessary packages(git, ansible, cfn-heat ...) to download the repo(mentioned in step3), run playbook, wait handle and  referencing parameters in Userdata.
 
-Step 6: Tested the functioning of the CFT and pushed the Repository to GitHub https://github.com/sriramgaddipati/UbuntuAnsible 
+![screen shot 2018-02-08 at 12 02 57 am](https://user-images.githubusercontent.com/12737517/35960206-ce8a78d0-0c76-11e8-8570-449f641e47cf.png)
+
+Step 6: Tested the functioning of the CFT and pushed the Repository to GitHub https://github.com/Peetheadmin/AnsibleDeployWordpress.git
 
 **To Build the stack**:
 
-1. Download  this repository https://github.com/sriramgaddipati/UbuntuAnsible .
+1. Download  this repository https://github.com/Peetheadmin/AnsibleDeployWordpress.git .
 
 2. Create a stack using CloudFormation.json file in cloud formation.
 
@@ -44,12 +46,10 @@ Step 6: Tested the functioning of the CFT and pushed the Repository to GitHub ht
 
 **Output**:
 
-Stack up and running, able to access EC2 instance and MySQLDB with input username and password. 
+Stack up and running, able to access EC2 instance and MySQLDB with input username and password.
 
-<img width="1280" alt="built stack" src="https://cloud.githubusercontent.com/assets/19828746/24136041/539ca676-0de3-11e7-9d24-b1d8a0611740.png">
+![screen shot 2018-02-08 at 2 12 29 am 2](https://user-images.githubusercontent.com/12737517/35960366-64849a82-0c77-11e8-9c18-2eeebd60b53f.png)
 
 **Access wordpress using url located here**
 
-<img width="1257" alt="wordpress url" src="https://cloud.githubusercontent.com/assets/19828746/24271202/aaa93c1a-0fee-11e7-9e67-3183ff6e3691.png">
-
-
+![screen shot 2018-02-08 at 2 14 27 am](https://user-images.githubusercontent.com/12737517/35960385-7533416c-0c77-11e8-8274-bc68b202a2fe.png)
