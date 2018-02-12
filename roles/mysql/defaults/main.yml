@@ -1,4 +1,4 @@
 ---
-login_user: "{{ ec2admin }}"
-login_password: "{{ linux123 }}"
-
+wp_mysql_db: wordpressdb
+wp_mysql_user: ec2admin
+wp_mysql_password: linux123
