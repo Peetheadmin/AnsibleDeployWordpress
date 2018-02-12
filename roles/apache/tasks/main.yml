@@ -1,53 +1,15 @@
 ---
-- name: Update apt cache
-  apt: update_cache=yes cache_valid_time=3600
-  sudo: yes
-
-
-- debconf:
-   name: mysql-server
-   question: mysql-server/root_password
-   vtype: password
-   value: "{{ mysql_admin_password }}"
-
-
-- debconf:
-   name: mysql-server
-   question: mysql-server/root_password_again
-   vtype: password
-   value: "{{ mysql_admin_password }}"
-
- 
-- name: Install mysql-server
-  apt: name=mysql-server state=present
-  sudo: yes
-
-- debconf:
-   name: mysql-server
-   question: mysql-server/root_password
-   vtype: password
-   value: "password"
-
-
-- debconf:
-   name: mysql-server
-   question: mysql-server/root_password_again
-   vtype: password
-   value: "password"
-
-
 - name: Install required software
   apt: name={{ item }} state=present
   sudo: yes
   with_items:
     - apache2
-    #- mysql-server
-    - php-mysql
-    - php
-    - libapache2-mod-php
-    - php-mcrypt
+    - mysql-server
+    - php5-mysql
+    - php5
+    - libapache2-mod-php5
+    - php5-mcrypt
     - python-mysqldb
-
 # https://coderwall.com/p/yez9yw/secure-mysql-with-ansible
 
 # - name: ensure mysql is running and starts on boot
