@@ -1,4 +1,4 @@
 ---
 wp_mysql_db: wordpressdb
-wp_mysql_user: ec2admin
+wp_mysql_user: prosper
 wp_mysql_password: linux123
