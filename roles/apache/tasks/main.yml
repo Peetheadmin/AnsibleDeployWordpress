@@ -1,15 +1,16 @@
 ---
-- name: Install required software
+    - name: Install required software
   apt: name={{ item }} state=present
   sudo: yes
   with_items:
     - apache2
-    - mysql-server
-    - php5-mysql
-    - php5
-    - libapache2-mod-php5
-    - php5-mcrypt
+    #- mysql-server
+    - php-mysql
+    - php
+    - libapache2-mod-php
+    - php-mcrypt
     - python-mysqldb
+
 # https://coderwall.com/p/yez9yw/secure-mysql-with-ansible
 
 # - name: ensure mysql is running and starts on boot
